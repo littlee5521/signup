@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'odin';
+    src: url('../fonts/Norse-Bold.otf') format("opentype");
+}
+body{
+    background-color: black;
+    display: flex;
+    margin: 10vh 35vw;
+}
+a{
+    color: white;
+}
+.sidebar {
+    position: relative;
+}
+.plant-img{
+    width: 45rem;
+}
+.odin-img {
+    width: 10rem;
+    padding-left: 20%;
+}
+.logo {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.logo-text {
+    justify-content: center;
+    flex: auto;
+    color: white;
+    font-size: 10rem;
+    font-family: 'odin';
+    padding-top: 5%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    color: white;
+}
