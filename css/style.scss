@@ -5,11 +5,23 @@
 body{
     background-color: black;
     display: flex;
-    margin: 10vh 35vw;
+    margin: 10vh 30vw;
 }
 a{
     color: white;
 }
+.content{
+    display: flex;
+    flex: 1;
+}
+.information{
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    flex: auto;
+    flex-shrink: 0;
+    background-color: white;
+    flex-grow: 0;}
 .sidebar {
     position: relative;
 }
@@ -22,7 +34,7 @@ a{
 }
 .logo {
     position: absolute;
-    top: 10%;
+    top: 20%;
     display: flex;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -37,7 +49,27 @@ a{
 }
 .footer {
     position: absolute;
-    bottom: 0;
+    bottom: 2%;
     left: 30%;
     color: white;
+}
+.header {
+    background-color: rgb(238, 237, 237);
+    height: 39.5%;
+}
+.header-text{
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+}
+.header-sub-text{
+    font-size: 1.5rem;
+    margin-left: 10%;
+}
+.form-info{
+    height: 80%;
+}
+.form-input{
+    height: 40%;
 }
