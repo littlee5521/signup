@@ -1,75 +1,101 @@
+@mixin maintext {
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
 @font-face {
-    font-family: 'odin';
-    src: url('../fonts/Norse-Bold.otf') format("opentype");
+  font-family: "odin";
+  src: url("../fonts/Norse-Bold.otf") format("opentype");
 }
-body{
-    background-color: black;
-    display: flex;
-    margin: 10vh 30vw;
+body {
+  background-color: black;
+  display: flex;
+  margin: 10vh 30vw;
 }
-a{
-    color: white;
+a {
+  color: white;
 }
-.content{
-    display: flex;
-    flex: 1;
+.content {
+  display: flex;
+  flex: 1;
 }
-.information{
-    flex-direction: column;
-    display: flex;
-    width: 70%;
-    flex: auto;
-    flex-shrink: 0;
-    background-color: white;
-    flex-grow: 0;}
+.information {
+  flex-direction: column;
+  display: flex;
+  width: 70%;
+  flex: auto;
+  flex-shrink: 0;
+  background-color: white;
+  flex-grow: 0;
+}
 .sidebar {
-    position: relative;
+  position: relative;
 }
-.plant-img{
-    width: 45rem;
+.plant-img {
+  width: 45rem;
 }
 .odin-img {
-    width: 10rem;
-    padding-left: 20%;
+  width: 10rem;
+  padding-left: 20%;
 }
 .logo {
-    position: absolute;
-    top: 20%;
-    display: flex;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 .logo-text {
-    justify-content: center;
-    flex: auto;
-    color: white;
-    font-size: 10rem;
-    font-family: 'odin';
-    padding-top: 5%;
+  justify-content: center;
+  flex: auto;
+  color: white;
+  font-size: 10rem;
+  font-family: "odin";
+  padding-top: 5%;
 }
 .footer {
-    position: absolute;
-    bottom: 2%;
-    left: 30%;
-    color: white;
+  position: absolute;
+  bottom: 2%;
+  left: 30%;
+  color: white;
 }
 .header {
-    background-color: rgb(238, 237, 237);
-    height: 39.5%;
+  background-color: rgb(238, 237, 237);
+  height: 39.5%;
 }
-.header-text{
-    margin-top: 20%;
-    margin-left: 10%;
-    font-size: 1.5rem;
-    padding-bottom: 5%;
+.header-text {
+  margin-top: 20%;
+  @include maintext;
+  padding-bottom: 5%;
 }
-.header-sub-text{
-    font-size: 1.5rem;
-    margin-left: 10%;
+.header-sub-text {
+  @include maintext;
 }
-.form-info{
-    height: 80%;
+.form-info {
+  height: 80%;
+  display: flex;
 }
-.form-input{
-    height: 40%;
+.form-input {
+  height: 15%;
+  display: flex;
+}
+.form-field {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: space-between;
+  padding-left: 4.5%;
+  padding-right: 5%;
+}
+.doit {
+  padding-top: 2%;
+  @include maintext;
+  padding-bottom: 3%;
+}
+.form-element {
+  flex: auto;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
 }

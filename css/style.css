@@ -71,22 +71,49 @@ a {
 
 .header-text {
   margin-top: 20%;
-  margin-left: 10%;
+  margin-left: 5%;
   font-size: 1.5rem;
   padding-bottom: 5%;
 }
 
 .header-sub-text {
+  margin-left: 5%;
   font-size: 1.5rem;
-  margin-left: 10%;
 }
 
 .form-info {
   height: 80%;
+  display: flex;
 }
 
 .form-input {
-  height: 40%;
+  height: 15%;
+  display: flex;
+}
+
+.form-field {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: space-between;
+  padding-left: 4.5%;
+  padding-right: 5%;
+}
+
+.doit {
+  padding-top: 2%;
+  margin-left: 5%;
+  font-size: 1.5rem;
+  padding-bottom: 3%;
+}
+
+.form-element {
+  flex: auto;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
