@@ -99,3 +99,15 @@ a {
   flex-direction: column;
   gap: 1%;
 }
+.submit {
+  display: flex;
+}
+.submit-button {
+  margin-top: 30px;
+  background-color: green;
+  color: white;
+  margin-left: 35px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
